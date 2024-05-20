@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all_exercise.css">
+</head>
+<body >
+
+    <div class="red-border"></div>
+
+
+    <div class="site-name"> <span>Fitness</span> <span class = "tu">Sanctuary</span></div> 
+     <div id="table-of-contents">    
+
+        <ul>
+            <li><a href="#exercise1"><span id="er">1.</span>  What is meditation</a></li>
+            <li><a href="#exercise2"><span id="er">2.</span>  Types of Meditation</a></li>
+            <li><a href="#exercise3"><span id="er">3.</span>  Getting Started with Meditation</a></li>
+            <li><a href="#exercise4"><span id="er">4.</span>  Health Benefits</a></li>
+        </ul>
+    </div>
+    <div class="best-chest-exercises"><span>Meditation</span>
+        <!-- <span class="yu"> Exercises</span> -->
+    </div>
+    
+    
+
+    <!-- Exercise Sections -->
+   
+    <div class="container" id = "exercise1">
+     
+        <h1>What is meditation</h1>
+        <img 
+        src = "medidation/medid.jpeg"
+        alt = "Barbell Bench Press"
+        width ="450"
+        height="250"
+        />
+        <p>
+            Meditation is a set of mental techniques that help train your attention and awarenss. <br>
+            It often involves concentrating on your breathing or a specific phrase, object, or idea to create a calm, focused, and relaxed mental state. <br>
+            Today, many people use meditation for non-religious purposes, such as stress management, improved focus, mood enhancement, and mental clarity</p>
+    </div>
+    <div class="container" id = "exercise2">
+     
+        <h1>Types of Meditation:</h1>
+        <img 
+        src = "medidation/med.png"
+        alt = "Barbell Bench Press"
+        width ="450"
+        height="250"
+        />
+        <p>
+            <h3>Focused (Concentrative) Meditation:</h3>
+            Involves focusing one of your five senses on a specific sensation or object. <br>
+            Examples include listening to a chime, staring at a candle, focusing on your breath, or counting prayer beads. <br>
+            When your mind wanders, you bring it back to focus on your chosen object or sensation. <br>
+            <h3>Mindfulness Meditation:</h3>
+            Involves becoming aware of your thoughts, feelings, and sensations without judgment or distraction. <br>
+            It helps develop present-moment awareness and acceptance of difficult emotions <br></p>
+    </div>
+
+    <div class="container" id = "exercise3">
+     
+        <h1>Getting Started with Meditation:</h1>
+        <img 
+        src = "medidation/medidation.jpeg"
+        alt = "Barbell Bench Press"
+        width ="450"
+        height="250"
+        />
+        <p>
+            <h3>Find a Quiet Space:</h3>
+            Choose a distraction-free area without phones or TVs. <br>
+            Sit comfortably on a cushion or chair with an upright posture. <br>
+            <h3>Relax Your Hands:</h3>
+            Let your hands rest naturally, either in your lap or in a mudra position (thumb and pointer finger pressed together). <br>
+            Tilt your chin downward and close your eyes. <br>
+            <h3>Set a Timer:</h3>
+            Start with a short session (3-5 minutes) and gradually increase the duration. <br>
+            Focus on your breathing throughout. <br>
+            <h3>Focus on Your Breath:</h3>
+            Breathe deeply from your belly. <br>
+            Concentrate on inhales and exhales. <br>
+            If your mind wanders, gently bring it back to your breath. <br>
+        </p>
+    </div>
+
+    <div class="container" id = "exercise4">
+     
+        <h1>Heatlh Benefits:</h1>
+        <img 
+        src = "medidation/medi.jpeg"
+        alt = "Barbell Bench Press"
+        width ="450"
+        height="250"
+        />
+        <p>
+            <h3>Reduces Stress:</h3>
+            Meditation is well-known for stress reduction. It helps lower cortisol levels, the stress hormone, and reduces inflammation caused by stress. <br>
+            It can also alleviate symptoms in conditions like irritable bowel syndrome, post-traumatic stress disorder, and fibromyalgia.
+            <h3>Controls Anxiety:</h3>
+            A meta-analysis found that meditation decreases anxiety, especially in those with high anxiety levels. <br>
+            Mindfulness meditation helps reduce anxiety symptoms and improves coping mechanisms . <br>
+            Yoga, which combines meditation and physical activity, also contributes to anxiety reduction <br>
+            <h3>Enhances Emotional Health:</h3>
+            Meditation fosters self-awareness, gratitude, and a positive outlook. <br>
+            It can improve emotional well-being and inner peace. <br>
+            <h3>Boosts Focus and Concentration:</h3>
+            Regular meditation enhances attention and cognitive skills. <br>
+            It helps you stay centered and maintain inner peace even beyond your meditation session <br>
+        </p>
+    </div>
+    
+
+      
+   
+
+    <!-- buttons -->    
+    <a href="gym.html"><button id="learn-more-btn" class="secondary-button">Back</button>
+    </a>    
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // for sticky site name
+        window.addEventListener('scroll', function() {
+            var siteName = document.querySelector('.site-name');
+            if (window.scrollY > 0) {
+                siteName.classList.add('sticky');
+            } else {
+                siteName.classList.remove('sticky');
+            }
+        });
+
+        // learn more button
+        // Get the button element
+        var learnMoreBtn = document.getElementById('learn-more-btn');
+        // Add click event listener to the button
+        learnMoreBtn.addEventListener('click', function() {
+            ;
+        });
+
+
+    
+
+    </script>
+    
+</body>
+
+</html>

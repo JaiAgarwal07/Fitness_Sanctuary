@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all_exercise.css">
+</head>
+<body >
+    <div class="red-border"></div>
+
+    <div class="site-name"> <span>Fitness</span> <span class = "tu">Sanctuary</span></div> 
+
+     <!-- Table of Contents -->
+     <div id="table-of-contents"> 
+        <ul>
+            <li><a href="#exercise1"><span id="er">1.</span>  Back squat</a></li>
+            <li><a href="#exercise2"><span id="er">2.</span>  Front squat</a></li>
+            <li><a href="#exercise3"><span id="er">3.</span>  Walking lunges </a></li>
+            <li><a href="#exercise4"><span id="er">4.</span>  Lateral lunge</a></li>
+            <li><a href="#exercise5"><span id="er">5.</span>  Reverse lunge</a></li>
+        </ul>
+    </div>
+    
+
+    
+    <div class="best-chest-exercises"><span>Legs</span><span class="yu"> Exercises</span></div>
+    
+
+    <!-- Exercise Sections -->
+    <div class="container" id = "exercise1">
+            <h2>Back squat</h2>
+        <img 
+        src = "legs/back squart.jpg"
+        alt = "back squat"
+        width="400"
+        height="400"
+        />
+    <h3> How to do it:</h3>
+    <p>1.Load a barbell on your traps and stand with your feet shoulder-width apart. Your gaze should be ahead, your chest should be proud, and your toes should be pointed slightly out
+        </br>
+        2.Sit back into your hips, bend your knees, and drop down toward the floor. Ensure that your knees move slightly out, and do not collapse in
+        </br>
+        3.Lower until your thighs are parallel to the ground — or as far down as your mobility allows — then push back up to the starting position
+    </p>
+        </div>
+
+    <div class="container" id = "exercise2">
+        <h2>Front squat</h2>
+        <img 
+        src = "legs/Front-Squat-Form-STACK.png"
+        alt = "Front squat"
+        width="500"
+        height="500"
+        />
+    <h3> How to do it:</h3>
+    <p>1.Load a barbell onto the front of your shoulders, hooking your fingers in an underhand grip on either side of your shoulders to support it. Push your elbows up and keep your gaze ahead.</br>
+        2.Sit back into your hips, bend your knees, and lower down toward the floor. Ensure that your knees track out and your chest stays proud, resisting the pull to fall forward</br>
+        3.Lower until your thighs are parallel to the ground — or as far down as your mobility allows — then push back up to the starting position.
+    </p>   
+    </div> 
+
+    <div class="container" id = "exercise1">
+        <h2>Walking lunges-</h2>
+        <img 
+        src = "legs/walking lunges.gif"
+        alt = "walking lunges"
+        width="400"
+        height="400"
+        />
+    <h3> How to do it:</h3>
+    <p>1.Start with your feet together. Hold a dumbbell in each hand if you want to perform a weighted walking lunge.
+        </br>
+        2.	Keeping your chest proud and gaze straight ahead, step forward, lunging with your right leg until your thigh is parallel to the ground
+        3.	Push up through your right heel, coming back up to the starting position. <br>
+        4.	Continue forward with the left leg.
+
+    </div>
+
+    <div class="container" id = "exercise1">
+        <h2> Lateral lunge </h2>
+        <img 
+        src = "legs/late.gif"
+        alt = "lateral lunges"
+        width="400"
+        height="400"
+        />
+    <h3> How to do it:</h3>
+    <p>1.	Start with your feet wider than hip-width apart. <br>
+        2.	Bend your left knee, sitting back into your left hip and keeping your torso upright. Keep your right leg as straight as possible, and lower down on your left leg until your knee forms a 90-degree angle. <br>
+        3.	Push back up to the starting position and repeat. Complete the desired number of reps on each side. <br>
+        
+
+    </p>    
+        </div>
+
+    <div class="container" id = "exercise1">
+        <h2>Reverse lunge</h2>
+        <img 
+        src = "legs/reverse lunges.gif"
+        alt = "Reverse lunges"
+        width="400"
+        height="400"
+        />
+    <h3> How to do it:</h3>
+    <p>1.	Stand with your feet shoulder-width apart and your arms down at your sides. <br>
+        2.	Step backward with your right foot, lunging until your left leg forms a 90-degree angle. Keep your torso upright. <br>
+        3.	Push back up through your left heel to the starting position.
+        </p> 
+    </div> 
+
+   
+
+
+    <!-- buttons -->    
+    <a href="gym.html"><button id="learn-more-btn" class="secondary-button">Back</button>
+    </a>    
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // for sticky site name
+        window.addEventListener('scroll', function() {
+            var siteName = document.querySelector('.site-name');
+            if (window.scrollY > 0) {
+                siteName.classList.add('sticky');
+            } else {
+                siteName.classList.remove('sticky');
+            }
+        });
+
+        // learn more button
+        // Get the button element
+        var learnMoreBtn = document.getElementById('learn-more-btn');
+        // Add click event listener to the button
+        learnMoreBtn.addEventListener('click', function() {
+            ;
+        });   
+
+    </script>
+</body>
+
+</html>
